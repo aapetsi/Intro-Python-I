@@ -3,3 +3,5 @@
 
 # YOUR CODE HERE
 print(2**65536)
+
+# printing in JS console says infinity
