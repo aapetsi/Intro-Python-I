@@ -54,3 +54,4 @@ for place in waypoints:
     lon = place["lon"]
     name = place["name"]
     print(f"Lat: {lat}, Lon: {lon}, Name: {name}")
+    
