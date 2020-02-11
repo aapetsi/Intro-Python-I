@@ -10,8 +10,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your
 # current directory when trying to open "foo.txt"
 import time
+
 # YOUR CODE HERE
-file = open('foo.txt', 'r')
+file = open("foo.txt", "r")
 print(file.read())
 file.close()
 
@@ -22,7 +23,7 @@ file.close()
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-new_file = open('bar.txt', 'w+')
+new_file = open("bar.txt", "w+")
 new_file.write("This is a new line\n")
 new_file.write("This is a new line 2\n")
 new_file.write("This is a new line 3\n")
