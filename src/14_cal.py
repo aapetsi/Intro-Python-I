@@ -29,4 +29,28 @@ it should use today’s date to get the month and year.
 
 import sys
 import calendar
-from datetime import datetime
+from datetime import datetime, date
+
+args = sys.argv
+
+
+def print_cal(args):
+    # if no arguments have been passed in
+    today = date.today()
+    if len(args) == 1:
+        month = today.month
+        year = today.year
+        print(calendar.month(year, month))
+    elif len(args) == 2:
+        month = int(args[1])
+        year = today.year
+        print(calendar.month(year, month))
+    elif len(args) == 3:
+        month = int(args[1])
+        year = int(args[2])
+        print(calendar.month(year, month))
+    else:
+        print("You need to provide the month and year as arguments")
+
+
+print_cal(args)
